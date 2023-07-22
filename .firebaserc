@@ -1,0 +1,14 @@
+{
+  "projects": {
+    "default": "aurora-personal-site"
+  },
+  "targets": {
+    "aurora-personal-site": {
+      "hosting": {
+        "UifeleanAurora": [
+          "aurora-personal-site"
+        ]
+      }
+    }
+  }
+}
