@@ -1,10 +1,19 @@
-<mat-toolbar class="menu">
-    <span>Uifelean Aurora</span>
+<mat-toolbar id="my-menu">
+
+    <li class="burger" (click)="toggleMenu()">
+        <i class="material-icons"> {{ isMenuOpen ? "close" : "menu" }}</i>
+    </li>
+
+    <span class="logotype">
+        <a mat-button class="menu-item" routerLink="">Uifelean Aurora</a>
+    </span>
     <div class="spacer"></div>
-    <a mat-button routerLink="">Home</a>
-    <a mat-button routerLink="about">About</a>
-    <a mat-button routerLink="qualification">Qualification</a>
-    <a mat-button routerLink="portfolio">Portfolio</a>
-    <a mat-button routerLink="blog">Blog</a>
-    <a mat-button routerLink="contact">Contact</a>
+    <li class="menu" [class.is-open]="isMenuOpen">
+        <a mat-button class="menu-item" routerLink="">Home</a>
+        <a mat-button class="menu-item" routerLink="about">About</a>
+        <a mat-button class="menu-item" routerLink="qualification">Qualification</a>
+        <a mat-button class="menu-item" routerLink="portfolio">Portfolio</a>
+        <a mat-button class="menu-item" routerLink="blog">Blog</a>
+        <a mat-button class="menu-item" routerLink="contact">Contact</a>
+    </li>
 </mat-toolbar>

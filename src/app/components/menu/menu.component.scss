@@ -1,7 +1,55 @@
-.spacer {
-    flex: 1 1 auto;
-}
-
-.menu {
-    padding: 0 6rem;
+$menuHeight: 60px;
+$menuBreakpoint: 768px;
+#my-menu {
+    padding: 0 3rem;
+    .spacer {
+        flex: 1 1 auto;
+    }
+    .logotype {
+        a {
+            padding: 0 8px;
+            font-size: 1.4rem;
+            text-decoration: none;
+        }
+    }
+    .burger {
+        padding: 0 20px;
+        border-left: 1px solid #eee;
+        display: none;
+        cursor: pointer;
+        i {
+            color: #999;
+            line-height: $menuHeight;
+        }
+        @media (max-width: $menuBreakpoint) {
+            display: block;
+        }
+    }
+    .menu {
+        display: flex;
+        align-items: center;
+        @media (max-width: $menuBreakpoint) {
+            display: none;
+            &.is-open {
+                display: block;
+                position: absolute;
+                top: #{$menuHeight + 2};
+                background: #fff;
+                width: 100%;
+                .menu-item {
+                    border-bottom: 1px solid #cccccc;
+                }
+            }
+        }
+        .menu-item {
+            padding: 0 10px;
+            height: $menuHeight;
+            line-height: $menuHeight;
+            text-decoration: none;
+            display: block;
+            text-transform: uppercase;
+            font-size: 0.8rem;
+            font-weight: 600;
+        }
+    }
 }
