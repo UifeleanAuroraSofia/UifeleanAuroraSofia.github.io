@@ -14,6 +14,7 @@ import { ContactComponent } from './pages/contact/contact.component';
 import { PageNotFoundComponent } from './pages/page-not-found/page-not-found.component';
 import { HomeComponent } from './pages/home/home.component';
 import { MenuComponent } from './components/menu/menu.component';
+import { ContentComponent } from './components/content/content.component';
 
 @NgModule({
   declarations: [
@@ -25,7 +26,8 @@ import { MenuComponent } from './components/menu/menu.component';
     ContactComponent,
     PageNotFoundComponent,
     HomeComponent,
-    MenuComponent
+    MenuComponent,
+    ContentComponent
   ],
   imports: [
     BrowserModule,

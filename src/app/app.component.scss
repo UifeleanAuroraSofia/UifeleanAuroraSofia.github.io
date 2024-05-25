@@ -1,0 +1,36 @@
+.column {
+    float: left;
+    width: 50%;
+    flex-direction: column;
+    display: flex;
+    position: sticky;
+    width: 50%;
+}
+
+.centre-page {
+    display: flex;
+    justify-content: space-between;
+    gap: 1rem;
+    margin: auto;
+    align-content: center;
+    padding-top: 0;
+    padding-bottom: 0;
+    padding-left: 5rem;
+    padding-right: 5rem;
+    @media only screen and (min-width: 375px) {
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
+    @media only screen and (min-width: 768px) {
+        padding-left: 2rem;
+        padding-right: 2rem;
+    }
+    @media only screen and (min-width: 1024px) {
+        padding-left: 4rem;
+        padding-right: 4rem;
+    }
+    @media only screen and (min-width: 2048px) {
+        padding-left: 7rem;
+        padding-right: 7rem;
+    }
+}

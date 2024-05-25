@@ -1,19 +1,66 @@
-<mat-toolbar id="my-menu">
+<div id="my-menu">
 
-    <li class="burger" (click)="toggleMenu()">
-        <i class="material-icons"> {{ isMenuOpen ? "close" : "menu" }}</i>
-    </li>
+    <div>
+        <h1>
+            <a mat-button class="name" routerLink="">Uifelean Aurora-Sofia</a>
+        </h1>
+        <h2 class="short-desc">
+            almost Junior Full-Stack Developer
+        </h2>
+        <p>
 
-    <span class="logotype">
-        <a mat-button class="menu-item" routerLink="">Uifelean Aurora</a>
-    </span>
-    <div class="spacer"></div>
-    <li class="menu" [class.is-open]="isMenuOpen">
-        <a mat-button class="menu-item" routerLink="">Home</a>
-        <a mat-button class="menu-item" routerLink="about">About</a>
-        <a mat-button class="menu-item" routerLink="qualification">Qualification</a>
-        <a mat-button class="menu-item" routerLink="portfolio">Portfolio</a>
-        <a mat-button class="menu-item" routerLink="blog">Blog</a>
-        <a mat-button class="menu-item" routerLink="contact">Contact</a>
-    </li>
-</mat-toolbar>
+        </p>
+        <nav>
+            <ul>
+                <li>
+                    <a class="menu-item" routerLink="">
+                        <span class="list padding-up padding-down"></span>
+                        <span class="menu-item">
+                            home
+                        </span>
+                    </a>
+                </li>
+                <li>
+                    <a class="menu-item" routerLink="about">
+                        <span class="list padding-up padding-down"></span>
+                        <span class="menu-item">
+                            about
+                        </span>
+                    </a>
+                </li>
+                <li>
+                    <a class="menu-item" routerLink="qualification">
+                        <span class="list padding-up padding-down"></span>
+                        <span class="menu-item">
+                            qualification
+                        </span>
+                    </a>
+                </li>
+                <li>
+                    <a class="menu-item" routerLink="portfolio">
+                        <span class="list padding-up padding-down"></span>
+                        <span class="menu-item">
+                            portfolio
+                        </span>
+                    </a>
+                </li>
+                <li>
+                    <a class="menu-item" routerLink="blog">
+                        <span class="list padding-up padding-down"></span>
+                        <span class="menu-item">
+                            blog
+                        </span>
+                    </a>
+                </li>
+                <li>
+                    <a class="menu-item" routerLink="contact">
+                        <span class="list padding-up padding-down"></span>
+                        <span class="menu-item">
+                            contact
+                        </span>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+    </div>
+</div>

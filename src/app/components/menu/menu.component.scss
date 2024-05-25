@@ -1,7 +1,21 @@
 $menuHeight: 60px;
 $menuBreakpoint: 768px;
 #my-menu {
-    padding: 0 3rem;
+    font-family: 'UbuntuMono-Bront';
+    padding-top: 7rem;
+    padding-bottom: 7rem;
+    .name {
+        font-size: 2rem;
+        font-weight: bolder;
+        padding-left: 5rem;
+        font-family: 'UbuntuMono-Bront';
+    }
+    .short-desc {
+        font-size: 1rem;
+        font-weight: bolder;
+        padding-left: 5rem;
+        font-family: 'UbuntuMono-Bront';
+    }
     .spacer {
         flex: 1 1 auto;
     }
@@ -12,44 +26,28 @@ $menuBreakpoint: 768px;
             text-decoration: none;
         }
     }
-    .burger {
-        padding: 0 20px;
-        border-left: 1px solid #eee;
-        display: none;
-        cursor: pointer;
-        i {
-            color: #999;
-            line-height: $menuHeight;
-        }
-        @media (max-width: $menuBreakpoint) {
-            display: block;
-        }
+    li {
+        list-style-type: none;
     }
-    .menu {
+    .list {
+        width: 3rem;
+        height: 3px;
+        margin-right: 1rem;
+        padding: 1rem;
+        background-color: black;
+        background-clip: content-box, padding-box;
+    }
+    .padding-up {
+        padding-top: 10px;
+    }
+    .padding-down {
+        padding-bottom: 10px;
+    }
+    .menu-item {
         display: flex;
-        align-items: center;
-        @media (max-width: $menuBreakpoint) {
-            display: none;
-            &.is-open {
-                display: block;
-                position: absolute;
-                top: #{$menuHeight + 2};
-                background: #fff;
-                width: 100%;
-                .menu-item {
-                    border-bottom: 1px solid #cccccc;
-                }
-            }
-        }
-        .menu-item {
-            padding: 0 10px;
-            height: $menuHeight;
-            line-height: $menuHeight;
-            text-decoration: none;
-            display: block;
-            text-transform: uppercase;
-            font-size: 0.8rem;
-            font-weight: 600;
-        }
+        height: 2rem;
+        font-size: larger;
+        color: inherit;
+        text-decoration: none;
     }
 }
