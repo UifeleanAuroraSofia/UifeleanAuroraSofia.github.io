@@ -1,14 +1,20 @@
 /* You can add global styles to this file, and also import other style files */
 
+@font-face {
+    font-family: 'UbuntuMono-Bront';
+    src: url('../fonts/UbuntuMono-Bront.ttf') format('truetype');
+}
+
 html,
 body {
     height: 100%;
+    font-family: 'UbuntuMono-Bront';
 }
 
 body {
     margin: 0;
-    font-family: Roboto, "Helvetica Neue", sans-serif;
     font-size: 2rem;
+    font-family: 'UbuntuMono-Bront';
 }
 
 @media only screen and (min-width: 960px) {}
@@ -16,21 +22,29 @@ body {
 @media only screen and (min-width: 1440px) {
     .body {
         font-size: 5rem;
+        font-family: 'UbuntuMono-Bront';
     }
 }
 
 @media only screen and (min-width: 2000px) {
     .body {
         font-size: 5rem;
+        font-family: 'UbuntuMono-Bront';
     }
 }
 
 @media only screen and (max-device-width: 480px) {
     /* styles for mobile browsers smaller than 480px; (iPhone) */
+    .body {
+        font-family: 'UbuntuMono-Bront';
+    }
 }
 
 @media only screen and (device-width: 768px) {
     /* default iPad screens */
+    .body {
+        font-family: 'UbuntuMono-Bront';
+    }
 }
 
 
@@ -38,12 +52,14 @@ body {
 
 @media only screen and (min-device-width: 481px) and (max-device-width: 1024px) and (orientation:portrait) {
     .body {
+        font-family: 'UbuntuMono-Bront';
         font-size: 1rem;
     }
 }
 
 @media only screen and (min-device-width: 481px) and (max-device-width: 1024px) and (orientation:landscape) {
     .body {
+        font-family: 'UbuntuMono-Bront';
         font-size: 1rem;
     }
 }
