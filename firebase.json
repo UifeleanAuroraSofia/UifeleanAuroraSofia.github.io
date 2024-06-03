@@ -1,5 +1,6 @@
 {
     "hosting": {
+        "target": "UifeleanAurora",
         "public": "dist/uifelean-aurora",
         "ignore": [
             "firebase.json",

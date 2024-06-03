@@ -1,12 +1,36 @@
-<div style="margin-left: 15rem; margin-right: 15rem;">
-    <div style="display: flex">
-        <div class="column centre-page">
-            <app-menu></app-menu>
+<ng-container *ngIf="isPhone">
+    <div class="display-content">
+        <div class="centre-page">
+            <app-menu [isPhone]="isPhone"></app-menu>
         </div>
-        <div class="column centre-page">
-            <app-content></app-content>
+        <div class="centre-page">
+            <app-content [isPhone]="isPhone"></app-content>
         </div>
     </div>
-</div>
+</ng-container>
+<ng-container *ngIf="isTablet">
+    <div class="display-content">
+        <div style="display: flex">
+            <div class="column centre-page">
+                <app-menu></app-menu>
+            </div>
+            <div class="column centre-page">
+                <app-content></app-content>
+            </div>
+        </div>
+    </div>
+</ng-container>
+<ng-container *ngIf="isDesktop">
+    <div class="display-content">
+        <div style="display: flex">
+            <div class="column centre-page">
+                <app-menu></app-menu>
+            </div>
+            <div class="column centre-page">
+                <app-content></app-content>
+            </div>
+        </div>
+    </div>
+</ng-container>
 <router-outlet>
 </router-outlet>
