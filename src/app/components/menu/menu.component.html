@@ -1,15 +1,17 @@
 <div id="my-menu">
 
     <div>
-        <h1>
-            <a mat-button class="name" routerLink="">Uifelean Aurora-Sofia</a>
-        </h1>
-        <h2 class="short-desc">
-            almost Junior Full-Stack Developer
-        </h2>
-        <p class="desc">
-            "Why did the private classes break up? Because they never saw each other."
-        </p>
+        <div>
+            <h1>
+                <a [ngClass]="isPhone ? 'name-phone' : 'name'" routerLink="">Uifelean Aurora-Sofia</a>
+            </h1>
+            <h2 [ngClass]="isPhone ? 'short-desc-phone' : 'short-desc'">
+                almost Junior Full-Stack Developer
+            </h2>
+            <p [ngClass]="isPhone ? 'desc-phone' : 'desc'">
+                "Why did the private classes break up? Because they never saw each other."
+            </p>
+        </div>
         <nav *ngIf="!isPhone">
             <ul>
                 <li>
