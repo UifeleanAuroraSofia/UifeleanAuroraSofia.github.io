@@ -1,28 +1,42 @@
 .column {
     float: left;
-    width: 50%;
+    width: 45%;
     flex-direction: column;
     display: flex;
     position: sticky;
-    width: 50%;
+}
+
+.column-about {
+    float: left;
+    width: 30%;
+    flex-direction: column;
+    display: flex;
+    position: sticky;
 }
 
 .display-content {
     margin-left: auto;
     margin-right: auto;
+    width: 75%;
     @media only screen and (min-width: 375px) {
         margin-left: auto;
         margin-right: auto;
     }
     @media only screen and (min-width: 768px) {
+        padding-left: 5rem;
+        padding-right: 5rem;
         margin-left: auto;
         margin-right: auto;
     }
     @media only screen and (min-width: 1024px) {
+        padding-left: 15rem;
+        padding-right: 15rem;
         margin-left: auto;
         margin-right: auto;
     }
     @media only screen and (min-width: 2048px) {
+        padding-left: 15rem;
+        padding-right: 15rem;
         margin-left: auto;
         margin-right: auto;
     }

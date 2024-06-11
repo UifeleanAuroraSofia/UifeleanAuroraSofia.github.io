@@ -8,6 +8,6 @@ import { Component, Input } from '@angular/core';
 export class MenuComponent {
   @Input() isPhone: boolean | undefined;
   ngOnInit() {
-    console.log(this.isPhone);
+    
   }
 }
