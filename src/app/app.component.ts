@@ -1,5 +1,4 @@
 import { Component } from '@angular/core';
-import { environment } from 'src/assets/environment';
 
 @Component({
   selector: 'app-root',
@@ -8,7 +7,6 @@ import { environment } from 'src/assets/environment';
 })
 export class AppComponent {
 
-  domain = environment.domain;
   title = 'UifeleanAurora';
 
   screenWidth: any;

@@ -1,1 +1,29 @@
-<p>portfolio works!</p>
+<div style="margin: 20px;">
+    <h1>Aplicatie Substanțe Periculoase</h1>
+
+    <div>
+        <label for="file">Selectează imagine:</label>
+        <input type="file" id="file" (change)="onFileSelected($event)" accept="image/*" />
+    </div>
+
+    <button (click)="upload()" [disabled]="!selectedFile">Trimite Imagine</button>
+
+    <div *ngIf="isValidUnhealthyList">
+        <h3>Substanțe periculoase detectate:</h3>
+        <ul>
+            <li *ngFor="let item of unhealthyList">
+                <strong>{{ item.name_ro }}</strong>
+                <span *ngIf="item.abbreviation"> ({{ item.abbreviation }})</span>
+                <span *ngIf="item.description"> {{ item.description }}</span>
+            </li>
+        </ul>
+    </div>
+
+    <div *ngIf="unhealthyList?.length === 0 && allText">
+        <p>Nicio substanță periculoasă detectată!</p>
+    </div>
+
+    <div *ngIf="errorMessage" style="color: red;">
+        <p>Eroare: {{ errorMessage }}</p>
+    </div>
+</div>
