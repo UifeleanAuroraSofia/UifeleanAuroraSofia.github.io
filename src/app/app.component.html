@@ -1,11 +1,7 @@
 <ng-container *ngIf="isPhone">
-    <div class="display-content">
-        <div class="centre-page">
-            <app-menu [isPhone]="isPhone"></app-menu>
-        </div>
-        <div class="centre-page">
-            <app-content [isPhone]="isPhone"></app-content>
-        </div>
+    <div class="phone-layout">
+        <app-mobile-menu></app-mobile-menu>
+        <app-content></app-content>
     </div>
 </ng-container>
 <ng-container *ngIf="isTablet">

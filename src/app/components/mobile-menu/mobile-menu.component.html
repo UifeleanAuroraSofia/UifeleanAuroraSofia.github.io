@@ -1,0 +1,15 @@
+<button class="hamburger-btn" (click)="isOpen = !isOpen">
+    <span class="bar"></span>
+    <span class="bar"></span>
+    <span class="bar"></span>
+</button>
+
+<div class="mobile-menu" [class.open]="isOpen">
+    <ul>
+        <li (click)="isOpen=false"><a routerLink="/home">home</a></li>
+        <li (click)="isOpen=false"><a routerLink="/about">about</a></li>
+        <li (click)="isOpen=false"><a routerLink="/portfolio">portfolio</a></li>
+        <li (click)="isOpen=false"><a routerLink="/blog">blog</a></li>
+        <li (click)="isOpen=false"><a routerLink="/contact">contact</a></li>
+    </ul>
+</div>
