@@ -16,6 +16,7 @@ import { HomeComponent } from './pages/home/home.component';
 import { MenuComponent } from './components/menu/menu.component';
 import { ContentComponent } from './components/content/content.component';
 import { HttpClientModule } from '@angular/common/http';
+import { MobileMenuComponent } from './components/mobile-menu/mobile-menu.component';
 
 @NgModule({
   declarations: [
@@ -28,7 +29,8 @@ import { HttpClientModule } from '@angular/common/http';
     PageNotFoundComponent,
     HomeComponent,
     MenuComponent,
-    ContentComponent
+    ContentComponent,
+    MobileMenuComponent
   ],
   imports: [
     BrowserModule,

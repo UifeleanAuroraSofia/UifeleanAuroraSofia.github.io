@@ -22,16 +22,12 @@ export class AppComponent {
   }
 
   checkWindow() {
-    console.log(this.screenWidth);
     if (this.screenWidth > 1024) {
       this.isDesktop = true;
-    }
-    else if (this.screenWidth > 768) {
+    } else if (this.screenWidth > 768) {
       this.isTablet = true;
-    }
-    else {
+    } else {
       this.isPhone = true;
     }
-    console.log(this.isPhone, this.isTablet, this.isDesktop);
   }
 }
