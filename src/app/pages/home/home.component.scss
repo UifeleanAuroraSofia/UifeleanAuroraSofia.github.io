@@ -1,0 +1,11 @@
+.home-layout {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 1200px;
+    margin: auto;
+}
+
+app-content {
+    text-align: justify;
+}

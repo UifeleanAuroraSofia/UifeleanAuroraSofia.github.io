@@ -71,3 +71,12 @@ body {
         background-color: #F8F4E1;
     }
 }
+
+app-portfolio {
+    display: flex;
+    justify-content: center;
+    width: 80%;
+    max-width: 1200px;
+    padding-top: 5rem;
+    margin: 0, auto;
+}

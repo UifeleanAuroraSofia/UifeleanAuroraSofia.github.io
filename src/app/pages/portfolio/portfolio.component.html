@@ -1,15 +1,16 @@
 <div style="margin: 20px;">
-    <h1>Aplicatie Substanțe Periculoase</h1>
+    <h1>Food Scanner Application</h1>
 
-    <div>
-        <label for="file">Selectează imagine:</label>
+    <div class="div-buttons">
+        <label class="select-file" for="file">Select Image</label>
         <input type="file" id="file" (change)="onFileSelected($event)" accept="image/*" />
+        <h3 *ngIf="isFileSelected">Selected Image {{ getFileName() }}</h3>
     </div>
 
-    <button (click)="upload()" [disabled]="!selectedFile">Trimite Imagine</button>
+    <button class="select-file" (click)="upload()" [disabled]="!selectedFile">Send Image</button>
 
-    <div *ngIf="isValidUnhealthyList">
-        <h3>Substanțe periculoase detectate:</h3>
+    <div *ngIf="isValidUnhealthyList" class="detected-substances">
+        <h3>Dangerous substances detected:</h3>
         <ul>
             <li *ngFor="let item of unhealthyList">
                 <strong>{{ item.name_ro }}</strong>
@@ -20,10 +21,10 @@
     </div>
 
     <div *ngIf="unhealthyList?.length === 0 && allText">
-        <p>Nicio substanță periculoasă detectată!</p>
+        <p>There are no dangerous substances!</p>
     </div>
 
     <div *ngIf="errorMessage" style="color: red;">
-        <p>Eroare: {{ errorMessage }}</p>
+        <p>Error: {{ errorMessage }}</p>
     </div>
 </div>

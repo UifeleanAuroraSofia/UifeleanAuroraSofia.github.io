@@ -46,4 +46,12 @@ export class PortfolioComponent {
   get isValidUnhealthyList() {
     return this.unhealthyList?.length > 0;
   }
+
+  getFileName(): string | undefined {
+    return this.selectedFile?.name;
+  }
+
+  get isFileSelected() {
+    return this.selectedFile?.name !== undefined ? true : false;
+  }
 }

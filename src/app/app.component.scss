@@ -1,11 +1,3 @@
-.column {
-    float: left;
-    width: 45%;
-    flex-direction: column;
-    display: flex;
-    position: sticky;
-}
-
 .column-about {
     float: left;
     width: 30%;
@@ -17,7 +9,7 @@
 .display-content {
     margin-left: auto;
     margin-right: auto;
-    width: 75%;
+    width: 80%;
     @media only screen and (min-width: 375px) {
         margin-left: auto;
         margin-right: auto;

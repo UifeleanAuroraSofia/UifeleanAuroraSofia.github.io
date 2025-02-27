@@ -1,32 +1,15 @@
 <ng-container *ngIf="isPhone">
     <div class="phone-layout">
         <app-mobile-menu></app-mobile-menu>
-        <app-content></app-content>
     </div>
 </ng-container>
-<ng-container *ngIf="isTablet">
+<ng-container *ngIf="!isPhone">
     <div class="display-content">
         <div style="display: flex">
             <div class="column centre-page">
                 <app-menu></app-menu>
-            </div>
-            <div class="column centre-page">
-                <app-content></app-content>
+                <router-outlet></router-outlet>
             </div>
         </div>
     </div>
 </ng-container>
-<ng-container *ngIf="isDesktop">
-    <div class="display-content">
-        <div style="display: flex">
-            <div class="column-about centre-page">
-                <app-menu></app-menu>
-            </div>
-            <div class="column centre-page">
-                <app-content></app-content>
-            </div>
-        </div>
-    </div>
-</ng-container>
-<router-outlet>
-</router-outlet>
