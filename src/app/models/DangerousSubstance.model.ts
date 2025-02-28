@@ -1,4 +1,4 @@
-interface DangerousSubstance {
+export interface DangerousSubstance {
     name_ro: string;
     name_en: string;
     abbreviation: string;

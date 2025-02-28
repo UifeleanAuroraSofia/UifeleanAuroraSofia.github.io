@@ -1,15 +1,17 @@
-<ng-container *ngIf="isPhone">
-    <div class="phone-layout">
-        <app-mobile-menu></app-mobile-menu>
+<div class="display-content">
+  <div style="display: flex">
+    <div class="column centre-page">
+      <button
+        class="hamburger-button"
+        *ngIf="!isDesktop"
+        (click)="toggleMenu()"
+        aria-label="Toggle menu"
+      >
+        &#9776;
+      </button>
+
+      <app-menu *ngIf="isDesktop || isMenuOpen"></app-menu>
+      <router-outlet></router-outlet>
     </div>
-</ng-container>
-<ng-container *ngIf="!isPhone">
-    <div class="display-content">
-        <div style="display: flex">
-            <div class="column centre-page">
-                <app-menu></app-menu>
-                <router-outlet></router-outlet>
-            </div>
-        </div>
-    </div>
-</ng-container>
+  </div>
+</div>
