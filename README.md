@@ -1,7 +1,7 @@
 # UifeleanAurora
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 16.1.5.
-Project link: UifeleanAuroraSofia.github.io
+Project link: [UifeleanAuroraSofia.github.io](https://uifeleanaurorasofia.github.io/)
 
 ## Development server
 
